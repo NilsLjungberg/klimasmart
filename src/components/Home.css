@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:400,700|Playfair+Display");
+
+.home__background {
+  background-image: url(../images/background-home.jpeg);
+  background-position: bottom;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content__title {
+  font-family: "Playfair Display", serif;
+  font-size: 8vw;
+  margin: 0;
+  font-weight: normal;
+}
+
+.content__subtitle {
+  font-size: 1.45rem;
+  padding: 1rem 0;
+  letter-spacing: 2px;
+  text-indent: 2px;
+  text-align: center;
+}
+
+.content__subtitle::after {
+  content: "\2014";
+  display: block;
+  font-size: 2.75rem;
+  text-align: center;
+}
