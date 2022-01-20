@@ -135,9 +135,9 @@ const InfoCard = () => {
           Unternehmens
         </h2>
         <p>
-          klimasmart stellt sicher, dass Sie sowohl ihre Nachhaltigkeit in jedem
-          Bereich optimieren, als auch ihre Transparenz nachvollziehbar
-          erreichen.
+          <Italic>klimasmart</Italic> stellt sicher, dass Sie sowohl ihre
+          Nachhaltigkeit in jedem Bereich optimieren, als auch ihre Transparenz
+          nachvollziehbar erreichen.
         </p>
         <Container>
           <Image src={InfoImage} alt="" />

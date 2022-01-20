@@ -13,10 +13,10 @@ const NextStep = () => {
             <span className="italic">Kunden, Mitarbeiter und Investoren.</span>
           </h2>
           <p>
-            klimasmart hilft seinen Kunden einen Weg zu verbessertem
-            Umweltbewusstsein aufzuzeichnen welcher Risiken minimiert und
-            gleichzeitig die Sicherheit, Nachhaltigkeit und Produktivität
-            verbessert.
+            <span className="italic">klimasmart</span> hilft seinen Kunden einen
+            Weg zu verbessertem Umweltbewusstsein aufzuzeichnen welcher Risiken
+            minimiert und gleichzeitig die Sicherheit, Nachhaltigkeit und
+            Produktivität verbessert.
           </p>
         </div>
       </section>

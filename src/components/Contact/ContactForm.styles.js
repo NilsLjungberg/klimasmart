@@ -82,6 +82,10 @@ export const Input = styled.input`
     border: 0.5px solid #115b4c;
     background: #b6edc8;
   }
+
+  &::placeholder {
+    color: rgb(161, 5, 5);
+  }
 `;
 
 export const Textarea = styled.textarea`
@@ -107,4 +111,27 @@ export const ButtonDiv = styled.div`
   justify-content: flex-start;
   margin-bottom: 3rem;
   margin-left: 2rem;
+`;
+
+export const Button = styled.button`
+  margin: 1rem 1rem 0 1rem;
+  padding: 1rem 2rem;
+  border-radius: 7px;
+  border: none;
+  background: #115b4c;
+  color: whitesmoke;
+
+  &:hover {
+    background: #b6edc8;
+    color: rgb(47, 47, 51);
+    cursor: pointer;
+  }
+
+  &:disabled,
+  &:disabled:hover,
+  &:disabled:active {
+    background: #ccc;
+    color: whitesmoke;
+    cursor: not-allowed;
+  }
 `;

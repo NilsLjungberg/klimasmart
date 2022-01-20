@@ -1,0 +1,20 @@
+.phone {
+  width: 100%;
+  height: 3.5rem;
+  border-radius: 10px;
+  border: 0.5px solid #b6edc8;
+  background: whitesmoke;
+  font-family: "Poppins", sans-serif;
+  color: #115b4c;
+  box-shadow: 0 1rem 3rem rgba(47, 47, 51, 0.3);
+}
+
+.phone:focus {
+  outline: none;
+  border: 0.5px solid #115b4c;
+  background: #b6edc8;
+}
+
+.phone::placeholder {
+  color: rgb(161, 5, 5);
+}

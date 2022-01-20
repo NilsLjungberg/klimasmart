@@ -123,7 +123,7 @@ const SwiperImage = () => {
               "Daten zu Nachhaltigkeit werden zunehmend wichtiger für uns weil
               Nachhaltigkeit ausschlaggebend für jedes Business ist."
               <br />
-              <span>Lena Nordenbro</span>
+              <span>Lisa Herzog</span>
             </p>
           </Wrapper>
         </SwiperSlide>
@@ -135,7 +135,7 @@ const SwiperImage = () => {
               reduzieren. Wir sehen dies als der wichtigste Teil vom Puzzle,
               damit wir so nachhaltig wie möglich sein können."
               <br />
-              <span>Ann Carlsson</span>
+              <span>Robert Ulrich</span>
             </p>
           </Wrapper>
         </SwiperSlide>
@@ -143,11 +143,11 @@ const SwiperImage = () => {
           <Wrapper>
             <img src={img3} alt="" />
             <p>
-              "Unser zentraler Grund zum Start war unnötiger Konsum zu
-              reduzieren. Wir sehen dies als der wichtigste Teil vom Puzzle,
-              damit wir so nachhaltig wie möglich sein können."
+              "Jedes Unternehmen muss sich mit Nachhaltigkeit früher oder später
+              auseinandersetzen. Je früher desto besser! Und auch wir wollen
+              natürlich so nachhaltig wie möglich sein."
               <br />
-              <span>Ann Carlsson</span>
+              <span>Yannick Schaffner</span>
             </p>
           </Wrapper>
         </SwiperSlide>
