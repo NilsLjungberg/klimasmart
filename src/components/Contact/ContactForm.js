@@ -57,7 +57,7 @@ const ContactForm = (props) => {
     setIsTouched(true);
   };
 
-  const phoneNumberReset = () => {
+  const resetPhoneNumberHandler = () => {
     setIsTouched(false);
     setValue("");
   };
@@ -97,7 +97,7 @@ const ContactForm = (props) => {
     resetNameHandler();
     resetSurnameHandler();
     resetEmailHandler();
-    phoneNumberReset();
+    resetPhoneNumberHandler();
     setEnteredCompany("");
     setEnteredText("");
   };
