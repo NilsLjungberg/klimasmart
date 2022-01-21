@@ -12,7 +12,7 @@ export const Div = styled.div`
 
 export const Form = styled.form`
   height: 100%;
-  width: 100%;
+
   margin: 1.5rem 3rem;
 
   @media screen and (min-width: 991px) {

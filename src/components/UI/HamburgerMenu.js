@@ -107,7 +107,7 @@ const Icon = styled.span`
 
 const Navigation = styled.nav`
   height: 100%;
-  position: ${(props) => (props.clicked ? window.scrollTo(0, 0) : "absolute")};
+  position: ${(props) => (props.clicked ? window.scrollTo(0, 0) : "fixed")};
   top: 0;
   right: 0;
   z-index: 600;
@@ -166,13 +166,6 @@ const MenuNavigation = () => {
       setChangeNav(false);
     }
   };
-
-  /* function disableScroll() {
-    document.body.style.overflow = "hidden";
-  }
-  function enableScroll() {
-    document.body.style.overflow = "initial";
-  } */
 
   window.addEventListener("scroll", navChangeHandler);
 
