@@ -12,7 +12,6 @@ export const Div = styled.div`
 
 export const Form = styled.form`
   height: 100%;
-
   margin: 1.5rem 3rem;
 
   @media screen and (min-width: 991px) {
@@ -21,12 +20,17 @@ export const Form = styled.form`
 `;
 
 export const Personal = styled.div`
-  width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 3rem;
+  margin: 0 3rem;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    width: 100%;
+    margin: 0;
+  }
 `;
 
 export const Complete = styled.div`
@@ -34,7 +38,7 @@ export const Complete = styled.div`
   flex-direction: column;
   align-items: flex-start;
   width: 100%;
-  margin: 0 3rem;
+  margin: 1rem 3rem;
 
   label {
     text-align: left;
@@ -55,7 +59,7 @@ export const Other = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin: 0 3rem 3rem 3rem;
+  margin: 1rem 3rem 2rem 3rem;
 
   label {
     text-align: left;
@@ -109,7 +113,7 @@ export const ButtonDiv = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   margin-left: 2rem;
 `;
 
