@@ -130,7 +130,7 @@ export const Button = styled.button`
   &:disabled,
   &:disabled:hover,
   &:disabled:active {
-    background: #ccc;
+    background: #115b4c;
     color: whitesmoke;
     cursor: not-allowed;
   }

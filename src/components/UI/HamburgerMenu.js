@@ -107,7 +107,7 @@ const Icon = styled.span`
 
 const Navigation = styled.nav`
   height: 100%;
-  position: fixed;
+  position: ${(props) => (props.clicked ? window.scrollTo(0, 0) : "absolute")};
   top: 0;
   right: 0;
   z-index: 600;
@@ -117,7 +117,7 @@ const Navigation = styled.nav`
 `;
 
 const List = styled.ul`
-  position: absolute;
+  position: ${(props) => (props.clicked ? "fixed" : "absolute")};
   list-style: none;
   top: 50%;
   left: 50%;
@@ -166,6 +166,13 @@ const MenuNavigation = () => {
       setChangeNav(false);
     }
   };
+
+  /* function disableScroll() {
+    document.body.style.overflow = "hidden";
+  }
+  function enableScroll() {
+    document.body.style.overflow = "initial";
+  } */
 
   window.addEventListener("scroll", navChangeHandler);
 
