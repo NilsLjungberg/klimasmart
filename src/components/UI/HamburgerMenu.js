@@ -193,7 +193,7 @@ const MenuNavigation = () => {
       <Navigation clicked={isClicked}>
         <List>
           <li>
-            <ItemLink onClick={clickNavHandler} to="/">
+            <ItemLink onClick={clickNavHandler} to="/landing">
               Home
             </ItemLink>
           </li>
@@ -203,7 +203,7 @@ const MenuNavigation = () => {
             </ItemLink>
           </li>
           <li>
-            <ItemLink onClick={clickNavHandler} to="/portfolio">
+            <ItemLink onClick={clickNavHandler} to="/partners">
               Partners
             </ItemLink>
           </li>
