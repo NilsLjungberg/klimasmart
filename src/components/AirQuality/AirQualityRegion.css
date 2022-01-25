@@ -1,7 +1,8 @@
 .air-quality-container {
   display: flex;
   flex-direction: column;
-  height: 25vh;
+  justify-content: center;
+  height: 35vh;
   color: rgb(47, 47, 51);
   padding: 2rem;
   margin: 3rem;
@@ -32,13 +33,13 @@
 
 .air-quality {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .air-quality-left {
-  width: 110%;
+  width: 100%;
   height: 100%;
-  text-align: left;
+  text-align: center;
   font-size: 1.2rem;
 }
 
@@ -54,7 +55,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
   width: 100%;
 }
 
@@ -67,12 +68,13 @@
 
 .aqi {
   padding: 0.5rem;
-  width: 15rem;
+  width: 12rem;
   text-align: center;
   border-radius: 0.5rem;
   font-size: 1.2rem;
   font-weight: 300;
   color: rgb(47, 47, 51);
+  margin-bottom: 1.5rem;
 }
 
 .aqi-green {
@@ -113,6 +115,24 @@
   text-align: center;
 }
 
+@media screen and (min-width: 441px) {
+  .air-quality {
+    flex-direction: row;
+  }
+
+  .air-quality-left {
+    text-align: left;
+  }
+
+  .air-quality-right {
+    align-items: flex-end;
+  }
+
+  .aqi {
+    margin-bottom: 0;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .air-quality-container {
     width: 67%;
@@ -120,9 +140,14 @@
     margin-right: 15%;
     margin-top: 3rem;
     margin-bottom: 3rem;
+    height: 25vh;
   }
 
   .air-quality {
     margin: 0 4rem;
+  }
+
+  .aqi {
+    width: 15rem;
   }
 }

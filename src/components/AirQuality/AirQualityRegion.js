@@ -7,7 +7,7 @@ const AirQualityRegion = (props) => {
     <div className="air-quality-container green">
       <div className="air-quality">
         <div className="air-quality-left">
-          <h4>Momentane Luftqualität in Ihrer Region</h4>
+          <h4>Momentane Luftqualität in</h4>
           <h2>
             {props.airQuality.city}, {props.airQuality.country}
           </h2>
@@ -34,7 +34,7 @@ const AirQualityRegion = (props) => {
       <div className="air-quality-container yellow">
         <div className="air-quality">
           <div className="air-quality-left">
-            <h4>Momentane Luftqualität in Ihrer Region</h4>
+            <h4>Momentane Luftqualität in</h4>
             <h2>
               {props.airQuality.city}, {props.airQuality.country}
             </h2>
@@ -62,7 +62,7 @@ const AirQualityRegion = (props) => {
       <div className="air-quality-container orange">
         <div className="air-quality">
           <div className="air-quality-left">
-            <h4>Momentane Luftqualität in Ihrer Region</h4>
+            <h4>Momentane Luftqualität in</h4>
             <h2>
               {props.airQuality.city}, {props.airQuality.country}
             </h2>
@@ -90,7 +90,7 @@ const AirQualityRegion = (props) => {
       <div className="air-quality-container red">
         <div className="air-quality">
           <div className="air-quality-left">
-            <h4>Momentane Luftqualität in Ihrer Region</h4>
+            <h4>Momentane Luftqualität in</h4>
             <h2>
               {props.airQuality.city}, {props.airQuality.country}
             </h2>
@@ -118,7 +118,7 @@ const AirQualityRegion = (props) => {
       <div className="air-quality-container purple">
         <div className="air-quality">
           <div className="air-quality-left">
-            <h4>Momentane Luftqualität in Ihrer Region</h4>
+            <h4>Momentane Luftqualität in</h4>
             <h2>
               {props.airQuality.city}, {props.airQuality.country}
             </h2>
