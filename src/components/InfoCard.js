@@ -13,7 +13,7 @@ const InfoParagraph = styled.section`
   background-color: white;
   color: rgb(47, 47, 51);
   font-size: 1.8rem;
-  margin: 3rem;
+  margin: 0 3rem 3rem 3rem;
   line-height: 2.5rem;
   display: flex;
   flex-direction: column;

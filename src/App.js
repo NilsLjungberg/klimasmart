@@ -14,8 +14,8 @@ function App() {
     <>
       <MenuNavigation />
       <Routes>
-        <Route exact path="/" element={<Navigate replace to="/landing" />} />
-        <Route path="/landing" element={<Landing />} />
+        <Route exact path="/" element={<Navigate replace to="/home" />} />
+        <Route path="/home" element={<Landing />} />
         <Route path="/about" element={<About />} />
         <Route path="/partners" element={<Partners />} />
         <Route path="/blog" element={<Blog />} />

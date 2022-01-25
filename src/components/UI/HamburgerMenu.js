@@ -193,7 +193,7 @@ const MenuNavigation = () => {
       <Navigation clicked={isClicked}>
         <List>
           <li>
-            <ItemLink onClick={clickNavHandler} to="/landing">
+            <ItemLink onClick={clickNavHandler} to="/home">
               Home
             </ItemLink>
           </li>
