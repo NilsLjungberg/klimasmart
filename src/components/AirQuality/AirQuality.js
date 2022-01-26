@@ -28,7 +28,7 @@ const Luftquality = () => {
         "https://api.airvisual.com/v2/nearest_city?key=bac20422-8237-4735-9206-933abccf2398"
       );
 
-      if (!response.ok) {
+      if (response.status !== 200) {
         throw new Error("Something went wrong");
       }
 
@@ -52,8 +52,12 @@ const Luftquality = () => {
 
   return (
     <>
-      {!isLoading && <AirQualityRegion airQuality={airQuality} />}
-      {!isLoading && error && <Para>{error}</Para>}
+      {!isLoading && Object.keys(airQuality).length > 0 && (
+        <AirQualityRegion airQuality={airQuality} />
+      )}
+      {!isLoading && Object.keys(airQuality).length === 0 && error && (
+        <Para>{error}</Para>
+      )}
       {isLoading && <Para>Loading...</Para>}
     </>
   );
