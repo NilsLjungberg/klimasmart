@@ -19,10 +19,12 @@ const FlexDiv = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
 
   @media screen and (min-width: 991px) {
     flex-direction: row;
     justify-content: space-between;
+    align-items: flex-start;
   }
 `;
 
@@ -48,8 +50,10 @@ const Italic = styled.span`
 
 const Img = styled.img`
   margin: 3rem;
+  width: 310px;
+  height: 180px;
 
-  @media screen and (min-width: 991px) {
+  @media screen and (min-width: 768px) {
     width: 510px;
     height: 300px;
     margin-right: 1.5rem;

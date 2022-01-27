@@ -50,7 +50,7 @@ const Para = styled.p`
 
 const Img = styled.img`
   margin: 0 3rem 3rem 3rem;
-  width: 430px;
+  width: 350px;
 `;
 
 const WhyPartTwo = () => {
