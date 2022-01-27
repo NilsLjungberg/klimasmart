@@ -11,8 +11,8 @@ const colors = {
 const MenuLabel = styled.label`
   background-color: ${colors.primaryLight};
   position: fixed;
-  top: 6rem;
-  right: 6rem;
+  top: 3rem;
+  right: 3rem;
   border-radius: 50%;
   height: 7rem;
   width: 7rem;
@@ -43,8 +43,8 @@ const MenuBar = styled.div`
 
 const NavBackground = styled.div`
   position: fixed;
-  top: 6.5rem;
-  right: 6.5rem;
+  top: 3.5rem;
+  right: 3.5rem;
   background-image: radial-gradient(
     ${colors.primaryDark},
     ${colors.primaryLight}
