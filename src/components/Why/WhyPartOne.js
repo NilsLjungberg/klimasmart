@@ -90,8 +90,8 @@ const WhyPartOne = () => {
             Fragen an unsere Gestaltung von Zukunft und Gesellschaft stellt. Nur
             wer die Aspekte der begrenzten natürlichen Ressourcen, den Schutz
             der Umwelt und der sozialen Anforderungen in der Unternehmensplanung
-            mit einbeziehen, nimmt seine gesellschaftliche Verantwortung wahr
-            und handelt nachhaltig. Ballonpionier Bertrand Piccard sagt{" "}
+            mit einbezieht, nimmt seine gesellschaftliche Verantwortung wahr und
+            handelt nachhaltig. Ballonpionier Bertrand Piccard sagt{" "}
             <span style={{ fontStyle: "italic" }}>
               „dass erneuerbare Energien eine wunderbare Chance für die Schweiz
               sind“.

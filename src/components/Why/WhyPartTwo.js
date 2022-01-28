@@ -17,12 +17,13 @@ const Div = styled.div`
 const Title = styled.h2`
   line-height: 3.5rem;
   font-weight: bolder;
-  text-align: center;
   margin: 0 3rem;
   margin-top: 6rem;
+  text-align: left;
 
   @media screen and (min-width: 991px) {
     width: 70%;
+    text-align: center;
   }
 
   @media screen and (min-width: 1180px) {
@@ -49,7 +50,7 @@ const Para = styled.p`
 `;
 
 const Img = styled.img`
-  margin: 0 3rem 3rem 3rem;
+  margin: 0 3rem 6rem 3rem;
   width: 350px;
 `;
 

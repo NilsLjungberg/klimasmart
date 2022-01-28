@@ -24,7 +24,7 @@ const AirQualityRegion = (props) => {
       </div>
       <p className="air-quality-info">GUT</p>
       <p className="iqair">
-        Für mehr Info besuchen Sie <span>iqair.com</span>
+        Für mehr Infos besuchen Sie <span>iqair.com</span>
       </p>
     </div>
   );
@@ -51,7 +51,7 @@ const AirQualityRegion = (props) => {
         </div>
         <p className="air-quality-info">MODERAT</p>
         <p className="iqair">
-          Für mehr Info besuchen Sie <span>iqair.com</span>
+          Für mehr Infos besuchen Sie <span>iqair.com</span>
         </p>
       </div>
     );
@@ -79,7 +79,7 @@ const AirQualityRegion = (props) => {
         </div>
         <p className="air-quality-info">UNGESUND FÜR SENSIBLE GRUPPEN</p>
         <p className="iqair">
-          Für mehr Info besuchen Sie <span>iqair.com</span>
+          Für mehr Infos besuchen Sie <span>iqair.com</span>
         </p>
       </div>
     );
@@ -107,7 +107,7 @@ const AirQualityRegion = (props) => {
         </div>
         <p className="air-quality-info">UNGESUND</p>
         <p className="iqair">
-          Für mehr Info besuchen Sie <span>iqair.com</span>
+          Für mehr Infos besuchen Sie <span>iqair.com</span>
         </p>
       </div>
     );
@@ -135,7 +135,7 @@ const AirQualityRegion = (props) => {
         </div>
         <p className="air-quality-info">SEHR UNGESUND</p>
         <p className="iqair">
-          Für mehr Info besuchen Sie <span>iqair.com</span>
+          Für mehr Infos besuchen Sie <span>iqair.com</span>
         </p>
       </div>
     );
