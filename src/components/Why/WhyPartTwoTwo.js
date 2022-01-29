@@ -1,6 +1,6 @@
 import React from "react";
 
-import StufenSystem from "../../images/stufenweise_optimierung.png";
+import Improvement from "../../images/Improvement.png";
 
 import styled from "styled-components";
 
@@ -8,7 +8,6 @@ const Div = styled.div`
   height: 100%;
   width: 100%;
   font-size: 1.8rem;
-  background: rgba(210, 245, 233, 0.432);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -44,6 +43,10 @@ const Para = styled.p`
   font-weight: 300;
   color: #115b4c;
 
+  &:nth-of-type(2) {
+    font-style: italic;
+  }
+
   @media screen and (min-width: 991px) {
     text-align: center;
     width: 70%;
@@ -51,30 +54,33 @@ const Para = styled.p`
 `;
 
 const Img = styled.img`
-  margin: 0 3rem 4.5rem 3rem;
+  margin: 0 3rem;
   width: 350px;
   border-radius: 10px;
   box-shadow: 0 0.3rem 0.7rem rgba(47, 47, 51, 0.3);
 `;
 
-const WhyPartTwo = () => {
+const WhyPartTwoTwo = () => {
   return (
     <Div>
       <Title>
-        Eine abgestufte <Italic>Erfassung und Optimierung</Italic>
+        <Italic>Klima-Check</Italic> für Unternehmen und Gemeinden
       </Title>
       <Para>
-        Klimaneutrales Wirtschaften bedeutet effiziente Ressourcennutzung,
-        umweltverträgliches Handeln und soziale Verantwortung. Klimaneutrales
-        Wirtschaften schafft sowohl für die einzelnen Unternehmen als auch für
-        die gesamte Gesellschaft und die künftigen Generationen eine
-        zukunftsfähige Umwelt. Klimaneutrales Management steigert langfristig
-        den Unternehmenswert, in dem es Innovationen, Mitarbeitermotivation,
-        Risikoreduktion, Stakeholdervertrauen und Reputation fördert.
+        Warum sich mit Klimaschutz beschäftigen? Welchen Nutzen bringt das für
+        Ihren Betrieb? Klimaschutz bedeutet nicht Verzicht! Ziel ist es, das
+        langfristige Überleben des Unternehmens zu sichern, indem Innovationen
+        für neue Produkte, Dienstleistungen und Technologien gefördert werden.
+        Ein Klima-Check schafft die Voraussetzung dafür. Energie- und
+        Materialflussanalysen gehören zu den ersten Schritten eines
+        Klima-Checks. Mit Hilfe der systematischen Analyse von Prozesse und
+        Verfahren sowie Lieferketten können Sie klimarelevante Bereiche
+        eruieren.{" "}
       </Para>
-      <Img src={StufenSystem} alt="stufenweise optimierung" />
+      <Img src={Improvement} alt="kontinuierliche Verbesserung" />
+      <Para>Klimaneutrales Wirtschaften als Wettbewerbsvorteil!</Para>
     </Div>
   );
 };
 
-export default WhyPartTwo;
+export default WhyPartTwoTwo;

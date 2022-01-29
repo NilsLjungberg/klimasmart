@@ -29,7 +29,7 @@ const Title = styled.h2`
   margin-bottom: 1rem;
   text-align: left;
   margin: 0 3rem 1.5rem 3rem;
-  margin-top: 6rem;
+  margin-top: 3rem;
 
   @media screen and (min-width: 1180px) {
     font-size: 4rem;
@@ -62,7 +62,7 @@ const Para = styled.p`
   margin: 0 3rem;
   font-weight: 300;
   color: #115b4c;
-  margin-bottom: 6rem;
+  margin-bottom: 3rem;
 
   @media screen and (min-width: 991px) {
     margin-top: 3rem;

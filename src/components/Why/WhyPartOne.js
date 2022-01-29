@@ -8,7 +8,6 @@ const Div = styled.div`
   height: 100%;
   width: 100%;
   font-size: 1.8rem;
-  background: rgba(210, 245, 233, 0.432);
   display: flex;
   flex-direction: column;
   line-height: 2.5rem;
@@ -34,7 +33,7 @@ const Title = styled.h2`
   margin-bottom: 1rem;
   text-align: left;
   margin: 0 3rem;
-  margin-top: 12rem;
+  margin-top: 14rem;
 
   @media screen and (min-width: 1180px) {
     font-size: 4rem;
@@ -61,7 +60,7 @@ const Img = styled.img`
 `;
 
 const Para = styled.p`
-  margin: 0 3rem 6rem 3rem;
+  margin: 0 3rem 3rem 3rem;
   font-weight: 300;
   color: #115b4c;
 

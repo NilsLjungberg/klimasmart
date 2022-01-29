@@ -17,7 +17,7 @@ const Title = styled.h2`
   margin-bottom: 1rem;
   text-align: left;
   margin: 0 3rem 1.5rem 3rem;
-  margin-top: 6rem;
+  margin-top: 3rem;
 
   @media screen and (min-width: 1180px) {
     font-size: 4rem;
@@ -30,12 +30,16 @@ const CardsDiv = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 3rem 6rem 3rem;
+  margin: 0 3rem;
 `;
 
 const TwoCardsDiv = styled.div`
   display: flex;
   flex-direction: column;
+
+  &:nth-of-type(1) {
+    margin-bottom: 0;
+  }
 
   @media screen and (min-width: 768px) {
     flex-direction: row;
@@ -118,6 +122,26 @@ const Italic = styled.span`
   color: #115b4c;
 `;
 
+const Para = styled.p`
+  margin: 0 3rem 1.5rem 3rem;
+  font-weight: 300;
+  color: #115b4c;
+`;
+
+const List = styled.ul`
+  margin: 0 3rem 3rem 0.7rem;
+  font-weight: 300;
+  color: #115b4c;
+  font-size: 1.5rem;
+  font-style: italic;
+
+  @media screen and (min-width: 991px) {
+    width: 70%;
+    margin-left: 22.5%;
+    font-size: 1.8rem;
+  }
+`;
+
 const WhyPartFour = () => {
   return (
     <Div>
@@ -197,6 +221,39 @@ const WhyPartFour = () => {
           </Card>
         </TwoCardsDiv>
       </CardsDiv>
+      <Para>
+        Viele Emissionsquellen emittieren einen Cocktail von Treibhausgasen und
+        Luftschadstoffen. Russ, Ozon und Methan erzeugen nicht nur einen starken
+        globalen Treibhauseffekt, sondern sie tragen auch signifikant zu den
+        vielen vorzeitigen Todesfällen bei, die jedes Jahr mit Luftverschmutzung
+        in Verbindung gebracht werden. Neben der zwingenden Reduktion der
+        CO2-Emissionen, ist deshalb die rasche Verringerung von Russ, Methan und
+        anderen Ozonschädlingen heute dringend geboten. Die positiven Wirkungen,
+        die von solchen Minderungsmassnahmen ausgehen, sind wesentlich grösser
+        als bislang angenommen. Sie können sofort und vor Ort durch lokale,
+        regionale und nationale Umweltbehörden umgesetzt werden.{" "}
+        <Italic>
+          U.a. in den folgenden Bereichen lassen sich sowohl eine Verbesserung
+          der Luftqualität als auch die Eindämmung der Klimaerwärmung erreichen:
+        </Italic>
+      </Para>
+      <List>
+        <li>Einsatz erneuerbarer Energien (Gebäude, Verkehr, Industrie)</li>
+        <li>Ressourcenschonende Mobilität (öV, Langsamverkehr)</li>
+        <li>
+          Ressourcenschonende Beschaffung und Konsum (zirkuläre Wirtschaft)
+        </li>
+        <li>
+          Ausrüstung dieselbetriebener Fahrzeuge und Maschinen mit
+          Partikelfiltern
+        </li>
+        <li>
+          Staubminderung bei emissionsintensiven Feuerungen, speziell kleine
+          Holzfeuerungen
+        </li>
+        <li>Landwirtschaft</li>
+        <li>Abgaswartungspflicht auch für Zweiräder</li>
+      </List>
     </Div>
   );
 };
