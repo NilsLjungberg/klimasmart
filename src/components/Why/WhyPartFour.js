@@ -53,7 +53,7 @@ const TwoCardsDiv = styled.div`
 
 const Card = styled.div`
   width: 100%;
-  height: 570px;
+  height: 100%;
   background-color: whitesmoke;
   display: flex;
   flex-direction: column;
@@ -67,9 +67,13 @@ const Card = styled.div`
     margin-top: 3rem;
   }
 
+  &:nth-of-type(2) {
+    margin-bottom: 0;
+  }
+
   @media screen and (min-width: 768px) {
     width: 48%;
-    height: 680px;
+    height: 685px;
     margin: 3rem 0;
 
     &:nth-of-type(1) {
@@ -78,11 +82,12 @@ const Card = styled.div`
 
     &:nth-of-type(2) {
       margin-top: 0;
+      margin-bottom: 1.5rem;
     }
   }
 
   @media screen and (min-width: 991px) {
-    height: 530px;
+    height: 535px;
   }
 
   @media screen and (min-width: 1180px) {
@@ -123,7 +128,7 @@ const Italic = styled.span`
 `;
 
 const Para = styled.p`
-  margin: 0 3rem 1.5rem 3rem;
+  margin: 1.5rem 3rem 1.5rem 3rem;
   font-weight: 300;
   color: #115b4c;
 `;

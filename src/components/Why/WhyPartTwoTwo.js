@@ -45,6 +45,7 @@ const Para = styled.p`
 
   &:nth-of-type(2) {
     font-style: italic;
+    text-align: center;
   }
 
   @media screen and (min-width: 991px) {

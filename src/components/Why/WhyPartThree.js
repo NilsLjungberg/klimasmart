@@ -17,9 +17,11 @@ const Div = styled.div`
 const FlexDiv = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: center;
 
   @media screen and (min-width: 991px) {
     flex-direction: row-reverse;
+    align-items: flex-start;
   }
 `;
 
@@ -46,8 +48,10 @@ const Italic = styled.span`
 const Img = styled.img`
   margin: 3rem;
   border-radius: 10px;
+  width: 310px;
+  height: 180px;
 
-  @media screen and (min-width: 991px) {
+  @media screen and (min-width: 768px) {
     width: 400px;
     height: 260px;
   }
