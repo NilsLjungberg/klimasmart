@@ -194,27 +194,27 @@ const MenuNavigation = () => {
         <List>
           <li>
             <ItemLink onClick={clickNavHandler} to="/home">
-              Home
+              Startseite
             </ItemLink>
           </li>
           <li>
             <ItemLink onClick={clickNavHandler} to="/about">
-              About
+              Warum klimasmart
             </ItemLink>
           </li>
           <li>
-            <ItemLink onClick={clickNavHandler} to="/partners">
-              Partners
+            <ItemLink onClick={clickNavHandler} to="/klimaschutz">
+              Klimaschutzkonzept
             </ItemLink>
           </li>
           <li>
             <ItemLink onClick={clickNavHandler} to="/blog">
-              Blog
+              Ideen und Tipps
             </ItemLink>
           </li>
           <li>
-            <ItemLink onClick={clickNavHandler} to="/contact">
-              Contact Us
+            <ItemLink onClick={clickNavHandler} to="/aqi">
+              Air Quality Index
             </ItemLink>
           </li>
         </List>

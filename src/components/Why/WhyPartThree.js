@@ -91,12 +91,12 @@ const WhyPartThree = () => {
           extremer Wetterereignisse wie Dürre, Hagel, Stürme, Waldbrände und
           Überschwemmungen, das fortschreitende Abschmelzen der Pole sowie der
           Anstieg des Meeresspiegels und alle Folgewirkungen wie Artensterben,
-          Ernteausfälle, Verlust von Siedlungsraum usw.. Die Schadstoffe Russ,
+          Ernteausfälle, Verlust von Siedlungsraum usw. Die Schadstoffe Russ,
           Ozon und Methan besitzen sowohl ein Klimaerwärmungs- als auch ein
           Luftschadstoffpotenzial. Sie haben eine Lebensdauer von einigen
           Stunden bis etwa 12 Jahren in der Atmosphäre und werden daher als
           kurzlebige Klimaschadstoffe (SLCPs, Short Lived Climate Pollutants)
-          genannt. Im Gegensatz zu Kohlendioxid (CO2), das in der Atmosphäre
+          genannt. Im Gegensatz zu Kohlendioxid (CO₂), das in der Atmosphäre
           sehr langlebig ist, kann durch die Reduktion der SLCP-Emissionen rasch
           Beiträge zur Bremsung der Klimaerwärmung und zur Verbesserung der
           Luftqualität auf regionaler Ebene geleistet werden.{" "}

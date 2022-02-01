@@ -128,9 +128,13 @@ const Italic = styled.span`
 `;
 
 const Para = styled.p`
-  margin: 1.5rem 3rem 1.5rem 3rem;
+  margin: 3rem 3rem 1.5rem 3rem;
   font-weight: 300;
   color: #115b4c;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 1.5rem;
+  }
 `;
 
 const List = styled.ul`
@@ -144,10 +148,46 @@ const List = styled.ul`
     width: 70%;
     margin-left: 22.5%;
     font-size: 1.8rem;
+    margin-bottom: 0;
   }
 `;
 
-const WhyPartFour = () => {
+const ButtonDiv = styled.div`
+  width: 100%;
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  p {
+    font-size: 1.8rem;
+    color: #115b4c;
+  }
+
+  @media screen and (max-width: 991px) {
+    display: none;
+  }
+`;
+
+const Button = styled.button`
+  margin-bottom: 4.5rem;
+  padding: 1.5rem 2.5rem;
+  border-radius: 7px;
+  border: none;
+  background: #115b4c;
+  color: #b6edc8;
+  text-align: center;
+  margin-top: 1.5rem;
+
+  &:hover {
+    cursor: pointer;
+    background: #b6edc8;
+    color: #115b4c;
+  }
+`;
+
+const WhyPartFour = (props) => {
   return (
     <Div>
       <Title>
@@ -159,13 +199,13 @@ const WhyPartFour = () => {
             <Text>
               <CardTitle>Kohlendioxid</CardTitle>
               <p>
-                Kohlenstoffdioxid (CO2) ist das wichtigste Treibhausgas. Trotz
-                der geringen Konzentration ist CO2 für das Leben auf der Erde in
+                Kohlenstoffdioxid (CO₂) ist das wichtigste Treibhausgas. Trotz
+                der geringen Konzentration ist CO₂ für das Leben auf der Erde in
                 vielerlei Hinsicht von elementarer Bedeutung: Pflanzen nehmen
                 das für sie lebensnotwendige Spurengas auf und geben Sauerstoff
-                ab (Photosynthese). Als Treibhausgas beeinflusst CO2 durch den
+                ab (Photosynthese). Als Treibhausgas beeinflusst CO₂ durch den
                 Treibhauseffekt das Klima der Erde und durch seine Löslichkeit
-                in Wasser den pH-Wert der Ozeane wesentlich. CO2 entsteht durch
+                in Wasser den pH-Wert der Ozeane wesentlich. CO₂ entsteht durch
                 die Verbrennung von fossilen Brennstoffe. Fossile Energieträger
                 sind die Hauptquelle von menschengemachten
                 Treibhausgasemissionen und damit der globalen Klimaerwärmung. Je
@@ -185,7 +225,7 @@ const WhyPartFour = () => {
                 fossiler Brennstoffe, Abfalldeponien und die Landwirtschaft sind
                 die Hauptverantwortliche für die CH4-Emissionen. Das absolute
                 Treibhauspotential von Methan pro Einheit ist etwa 28-mal
-                grösser als das von CO2, aber die Lebenszeit ist viel kürzer,
+                grösser als das von CO₂, aber die Lebenszeit ist viel kürzer,
                 etwa 12 Jahre (Myhre et al., 2013B).
               </p>
             </Text>
@@ -232,7 +272,7 @@ const WhyPartFour = () => {
         globalen Treibhauseffekt, sondern sie tragen auch signifikant zu den
         vielen vorzeitigen Todesfällen bei, die jedes Jahr mit Luftverschmutzung
         in Verbindung gebracht werden. Neben der zwingenden Reduktion der
-        CO2-Emissionen, ist deshalb die rasche Verringerung von Russ, Methan und
+        CO₂-Emissionen, ist deshalb die rasche Verringerung von Russ, Methan und
         anderen Ozonschädlingen heute dringend geboten. Die positiven Wirkungen,
         die von solchen Minderungsmassnahmen ausgehen, sind wesentlich grösser
         als bislang angenommen. Sie können sofort und vor Ort durch lokale,
@@ -259,6 +299,10 @@ const WhyPartFour = () => {
         <li>Landwirtschaft</li>
         <li>Abgaswartungspflicht auch für Zweiräder</li>
       </List>
+      <ButtonDiv>
+        <p>Klicke hier für mehr Infos zu Klima- und Luftschadtstoffen</p>
+        <Button onClick={props.onShowTable}>Tabelle anzeigen</Button>
+      </ButtonDiv>
     </Div>
   );
 };

@@ -5,7 +5,7 @@ import { Routes, Route, Navigate } from "react-router-dom";
 import MenuNavigation from "./components/UI/HamburgerMenu";
 import Landing from "./pages/Landing";
 import About from "./pages/About";
-import Partners from "./pages/Partners";
+import KlimaschutzKonzept from "./pages/KlimaschutzKonzept";
 import Blog from "./pages/Blog";
 import Contact from "./pages/ContactUs";
 
@@ -17,9 +17,9 @@ function App() {
         <Route exact path="/" element={<Navigate replace to="/home" />} />
         <Route path="/home" element={<Landing />} />
         <Route path="/about" element={<About />} />
-        <Route path="/partners" element={<Partners />} />
+        <Route path="/klimaschutz" element={<KlimaschutzKonzept />} />
         <Route path="/blog" element={<Blog />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/aqi" element={<Contact />} />
       </Routes>
     </>
   );
