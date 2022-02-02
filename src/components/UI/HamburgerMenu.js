@@ -208,7 +208,7 @@ const MenuNavigation = () => {
             </ItemLink>
           </li>
           <li>
-            <ItemLink onClick={clickNavHandler} to="/blog">
+            <ItemLink onClick={clickNavHandler} to="/ideen">
               Ideen und Tipps
             </ItemLink>
           </li>

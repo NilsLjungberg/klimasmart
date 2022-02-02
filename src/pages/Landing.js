@@ -1,7 +1,6 @@
 import React from "react";
 
 import Home from "../components/Home";
-import AirQuality from "../components/AirQuality/AirQuality";
 import InfoCard from "../components/InfoCard";
 import NextStep from "../components/NextStep";
 import AddedValue from "../components/AddedValue";
@@ -18,7 +17,6 @@ const Landing = () => {
       <AddedValue />
       <SwiperImage />
       <Contact />
-      <AirQuality />
       <Footer />
     </>
   );

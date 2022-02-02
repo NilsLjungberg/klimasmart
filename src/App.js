@@ -6,8 +6,8 @@ import MenuNavigation from "./components/UI/HamburgerMenu";
 import Landing from "./pages/Landing";
 import About from "./pages/About";
 import KlimaschutzKonzept from "./pages/KlimaschutzKonzept";
-import Blog from "./pages/Blog";
-import Contact from "./pages/ContactUs";
+import Ideas from "./pages/Ideas";
+import AQI from "./pages/AQI";
 
 function App() {
   return (
@@ -18,8 +18,8 @@ function App() {
         <Route path="/home" element={<Landing />} />
         <Route path="/about" element={<About />} />
         <Route path="/klimaschutz" element={<KlimaschutzKonzept />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/aqi" element={<Contact />} />
+        <Route path="/ideen" element={<Ideas />} />
+        <Route path="/aqi" element={<AQI />} />
       </Routes>
     </>
   );

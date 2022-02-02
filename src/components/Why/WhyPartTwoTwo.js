@@ -79,7 +79,9 @@ const WhyPartTwoTwo = () => {
         eruieren.{" "}
       </Para>
       <Img src={Improvement} alt="kontinuierliche Verbesserung" />
-      <Para>Klimaneutrales Wirtschaften als Wettbewerbsvorteil!</Para>
+      <Para>
+        Klimaneutrales Wirtschaften als <Italic>Wettbewerbsvorteil!</Italic>
+      </Para>
     </Div>
   );
 };
