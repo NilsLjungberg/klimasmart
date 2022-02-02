@@ -8,6 +8,7 @@ import About from "./pages/About";
 import KlimaschutzKonzept from "./pages/KlimaschutzKonzept";
 import Ideas from "./pages/Ideas";
 import AQI from "./pages/AQI";
+import Legal from "./pages/Legal";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/klimaschutz" element={<KlimaschutzKonzept />} />
         <Route path="/ideen" element={<Ideas />} />
         <Route path="/aqi" element={<AQI />} />
+        <Route path="/legal" element={<Legal />} />
       </Routes>
     </>
   );

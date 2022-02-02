@@ -1,10 +1,11 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
-import InfoImage from "../images/Info.jpeg";
-import Klimakonzept from "../images/Klimakonzept.jpeg";
-import Ideen from "../images/Ideen.jpeg";
+import InfoImage from "../../images/Info.jpeg";
+import Klimakonzept from "../../images/Klimakonzept.jpeg";
+import Ideen from "../../images/Ideen.jpeg";
 
-import Button from "./UI/Button";
+import Button from "../UI/Button";
 
 import styled from "styled-components";
 
@@ -127,6 +128,10 @@ const Image = styled.img`
 `;
 
 const InfoCard = () => {
+  const clickHandler = () => {
+    window.scrollTo(0, 0);
+  };
+
   return (
     <>
       <InfoParagraph>
@@ -150,7 +155,9 @@ const InfoCard = () => {
               <Italic>klimasmart</Italic> unterstützt Unternehmen und Gemeinden
               bei der Erfassung und Optimierung ihrer Klimasituation.
             </p>
-            <Button>Mehr Info</Button>
+            <NavLink onClick={clickHandler} to="/about">
+              <Button>Mehr Info</Button>
+            </NavLink>
           </Text>
         </Container>
         <Container>
@@ -163,7 +170,9 @@ const InfoCard = () => {
               <Italic> Innovationen</Italic> für neue Produkte, Dienstleistungen
               und Technologien gefördert werden.
             </p>
-            <Button>Mehr Info</Button>
+            <NavLink onClick={clickHandler} to="/klimaschutz">
+              <Button>Mehr Info</Button>
+            </NavLink>
           </Text>
         </Container>
         <Container>
@@ -175,7 +184,9 @@ const InfoCard = () => {
               Wirtschaftsweise sind <Italic>Ressourceneffizienz</Italic> und
               eine <Italic>zirkuläre Wirtschaft.</Italic>
             </p>
-            <Button>Mehr Info</Button>
+            <NavLink onClick={clickHandler} to="/ideen">
+              <Button>Mehr Info</Button>
+            </NavLink>
           </Text>
         </Container>
       </InfoParagraph>

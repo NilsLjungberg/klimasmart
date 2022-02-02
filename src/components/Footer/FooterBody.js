@@ -8,31 +8,31 @@ const FooterBody = () => {
       <Div>
         <Info>
           <h3>klimasmart</h3>
-          <p>Address</p>
-          <p>Not</p>
-          <p>Public</p>
-          <p>Yet</p>
-          <p>Coming Soon</p>
+          <p>DOL Environmental Engineering & Consulting</p>
+          <p>Oberer Graben 22</p>
+          <p>CH - 9000 St. Gallen</p>
+          <p>Tel. +41-71-230-30-20</p>
+          <p>info@environ.ch</p>
         </Info>
         <Info>
-          <h3>Unternehmen</h3>
+          <h3>Platform</h3>
           <p>
-            <a href="/">Über uns</a>
+            <a href="/about">Warum klimasmart</a>
           </p>
           <p>
-            <a href="/">Partner</a>
+            <a href="/klimaschutz">Klimaschutzkonzept</a>
           </p>
           <p>
-            <a href="/">Blog</a>
+            <a href="/ideen">Ideen und Tipps</a>
           </p>
           <p>
-            <a href="/">Kontakt</a>
+            <a href="/aqi">Air Quality Index</a>
           </p>
         </Info>
         <Info>
           <h3>Legal</h3>
           <p>
-            <a href="/">Cookie Policy</a>
+            <a href="/legal">Rechtliche Hinweise</a>
           </p>
         </Info>
       </Div>
