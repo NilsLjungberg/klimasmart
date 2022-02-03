@@ -79,6 +79,7 @@ const Button = styled.button`
   background: #b6edc8;
   color: #115b4c;
   text-align: center;
+  transition: all 0.5s ease-in-out;
 
   &:hover {
     cursor: pointer;

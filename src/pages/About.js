@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 
+import Header from "../components/Header/Header";
 import WhyPartOne from "../components/Why/WhyPartOne";
 import WhyPartTwo from "../components/Why/WhyPartTwo";
 import WhyPartTwoTwo from "../components/Why/WhyPartTwoTwo";
@@ -22,6 +23,7 @@ const About = () => {
 
   return (
     <>
+      <Header />
       <WhyPartOne />
       <WhyPartTwo />
       <WhyPartTwoTwo />

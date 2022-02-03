@@ -139,3 +139,10 @@ export const Button = styled.button`
     cursor: not-allowed;
   }
 `;
+
+export const MessageDiv = styled.div`
+  text-align: center;
+  color: #115b4c;
+  font-size: 1.8rem;
+  margin: 3rem 0;
+`;

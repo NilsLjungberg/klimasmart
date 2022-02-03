@@ -18,7 +18,7 @@ const DivTitle = styled.h2`
   margin-bottom: 1rem;
   text-align: left;
   margin: 0 3rem;
-  margin-top: 14rem;
+  margin-top: 3rem;
   font-style: italic;
   color: #115b4c;
 

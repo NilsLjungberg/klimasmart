@@ -179,6 +179,7 @@ const Button = styled.button`
   color: #b6edc8;
   text-align: center;
   margin-top: 1.5rem;
+  transition: all 0.5s ease-in-out;
 
   &:hover {
     cursor: pointer;

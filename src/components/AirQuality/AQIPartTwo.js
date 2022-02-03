@@ -32,25 +32,21 @@ const ItalicRed = styled.span`
 
 const Card = styled.div`
   height: 100%;
-  width: 270px;
   background: white;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   border-radius: 10px;
   box-shadow: 0 0.3rem 0.7rem rgba(47, 47, 51, 0.3);
-  margin: 3rem;
-  margin-bottom: 2.5rem;
-  padding: 1.5rem 0;
+  margin: 3rem 0 1.5rem 0;
+  padding: 2.5rem 4rem;
 
-  &:nth-of-type(2) {
-    margin-top: 0;
-  }
-
-  @media screen and (min-width: 768px) {
-    &:nth-of-type(1) {
-      margin-bottom: 4rem;
-    }
+  @media screen and (min-width: 1100px) {
+    flex-direction: row;
+    height: 25vh;
+    padding: 0 2rem;
+    padding-top: 1.2rem;
   }
 `;
 
@@ -58,20 +54,36 @@ const Text = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
   color: rgb(254, 155, 86);
 
   p {
-    width: 90%;
-    text-align: left;
     font-weight: 500;
+    font-size: 1.3rem;
+    margin-top: 1.7rem;
+  }
+
+  @media screen and (min-width: 1100px) {
+    flex-direction: row;
+    align-items: center;
+    width: 50%;
+
+    p {
+      text-align: center;
+    }
   }
 `;
 
 const CountryDiv = styled.div`
   display: flex;
   flex-direction: row;
+  justify-content: left;
   align-items: center;
-  justify-content: space-between;
+
+  @media screen and (min-width: 1100px) {
+    flex-direction: column;
+  }
 `;
 
 const Para = styled.p`
@@ -92,10 +104,6 @@ const FlexDiv = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  @media screen and (min-width: 768px) {
-    flex-direction: row;
-  }
 `;
 
 const Row = styled.div`
@@ -108,6 +116,10 @@ const Row = styled.div`
   &:nth-of-type(2) {
     margin-bottom: 2rem;
   }
+
+  @media screen and (min-width: 1100px) {
+    width: 40%;
+  }
 `;
 
 const AQIPartTwo = () => {
@@ -118,52 +130,51 @@ const AQIPartTwo = () => {
         <ItalicRed>weltweit höchsten Luftverschmutzung 2020</ItalicRed>
       </DivTitle>
       <FlexDiv>
-        <Row>
-          <Card>
-            <Text>
-              <CountryDiv>
-                <Flags.BD title="Bangladesh" className="flags" />
-                <p>Bangladesh</p>
-              </CountryDiv>
-              <CountryDiv>
-                <Flags.PK title="Pakistan" className="flags" />
-                <p>Pakistan</p>
-              </CountryDiv>
-              <CountryDiv>
-                <Flags.IN title="Indien" className="flags" />
-                <p>Indien</p>
-              </CountryDiv>
-              <CountryDiv>
-                <Flags.MN title="Mongolei" className="flags" />
-                <p>Mongolei</p>
-              </CountryDiv>
-              <CountryDiv>
-                <Flags.AF title="Afghanistan" className="flags" />
-                <p>Afghanistan</p>
-              </CountryDiv>
-              <CountryDiv>
-                <Flags.OM title="Oman" className="flags" />
-                <p>Oman</p>
-              </CountryDiv>
-              <CountryDiv>
-                <Flags.QA title="Katar" className="flags" />
-                <p>Katar</p>
-              </CountryDiv>
-              <CountryDiv>
-                <Flags.KG title="Kirgistan" className="flags" />
-                <p>Kirgistan</p>
-              </CountryDiv>
-              <CountryDiv>
-                <Flags.ID title="Indonesien" className="flags" />
-                <p>Indonesien</p>
-              </CountryDiv>
-              <CountryDiv>
-                <Flags.BA title="Bosnien u.H." className="flags" />
-                <p>Bosnien u. H.</p>
-              </CountryDiv>
-            </Text>
-          </Card>
-        </Row>
+        <Card>
+          <Text>
+            <CountryDiv>
+              <Flags.BD title="Bangladesh" className="flags" />
+              <p>Bangladesh</p>
+            </CountryDiv>
+            <CountryDiv>
+              <Flags.PK title="Pakistan" className="flags" />
+              <p>Pakistan</p>
+            </CountryDiv>
+            <CountryDiv>
+              <Flags.IN title="Indien" className="flags" />
+              <p>Indien</p>
+            </CountryDiv>
+            <CountryDiv>
+              <Flags.MN title="Mongolei" className="flags" />
+              <p>Mongolei</p>
+            </CountryDiv>
+            <CountryDiv>
+              <Flags.AF title="Afghanistan" className="flags" />
+              <p>Afghanistan</p>
+            </CountryDiv>
+            <CountryDiv>
+              <Flags.OM title="Oman" className="flags" />
+              <p>Oman</p>
+            </CountryDiv>
+            <CountryDiv>
+              <Flags.QA title="Katar" className="flags" />
+              <p>Katar</p>
+            </CountryDiv>
+            <CountryDiv>
+              <Flags.KG title="Kirgistan" className="flags" />
+              <p>Kirgistan</p>
+            </CountryDiv>
+            <CountryDiv>
+              <Flags.ID title="Indonesien" className="flags" />
+              <p>Indonesien</p>
+            </CountryDiv>
+            <CountryDiv>
+              <Flags.BA title="Bosnien u.H." className="flags" />
+              <p>Bosnien u. H.</p>
+            </CountryDiv>
+          </Text>
+        </Card>
+
         <Row>
           <Card>
             <Para>

@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+import axios from "axios";
+
 import useInput from "../../hooks/use-input";
 
 import PhoneInput from "react-phone-number-input/input";
@@ -17,6 +19,7 @@ import {
   Textarea,
   ButtonDiv,
   Button,
+  MessageDiv,
 } from "./ContactForm.styles";
 
 const ContactForm = (props) => {
@@ -74,6 +77,9 @@ const ContactForm = (props) => {
     setEnteredText(event.target.value);
   };
 
+  const [isSent, setIsSent] = useState(false);
+  const [status, setStatus] = useState("Absenden");
+
   let formIsValid = false;
 
   if (
@@ -85,21 +91,37 @@ const ContactForm = (props) => {
     formIsValid = true;
   }
 
-  const formSubmitHandler = (event) => {
+  const formSubmitHandler = async (event) => {
     event.preventDefault();
+    setStatus("Versenden...");
 
-    if (!enteredNameIsValid) {
-      return;
-    }
+    let data = {
+      name: enteredName,
+      surname: enteredSurname,
+      email: enteredEmail,
+      phone: value,
+      company: enteredCompany,
+      message: enteredText,
+    };
 
-    console.log(enteredName);
-
-    resetNameHandler();
-    resetSurnameHandler();
-    resetEmailHandler();
-    resetPhoneNumberHandler();
-    setEnteredCompany("");
-    setEnteredText("");
+    axios
+      .post("/api/forma", data)
+      .then((res) => {
+        resetNameHandler();
+        resetSurnameHandler();
+        resetEmailHandler();
+        resetPhoneNumberHandler();
+        setEnteredCompany("");
+        setEnteredText("");
+        setIsSent(true);
+        setStatus("Absenden");
+        setTimeout(() => {
+          setIsSent(false);
+        }, 5000);
+      })
+      .catch(() => {
+        console.log("message not sent");
+      });
   };
 
   return (
@@ -163,7 +185,6 @@ const ContactForm = (props) => {
             <PhoneInput
               className="phone"
               country="CH"
-              international="true"
               value={value}
               onChange={setValue}
               onBlur={numberBlurHandler}
@@ -196,8 +217,13 @@ const ContactForm = (props) => {
           />
         </Other>
         <ButtonDiv>
-          <Button disabled={!formIsValid}>Absenden</Button>
+          <Button disabled={!formIsValid} type="submit">
+            {status}
+          </Button>
         </ButtonDiv>
+        {isSent && (
+          <MessageDiv>Ihre Nachricht wurde erfolgreich übermittelt.</MessageDiv>
+        )}
       </Form>
     </Div>
   );
