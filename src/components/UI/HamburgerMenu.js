@@ -20,6 +20,10 @@ const MenuLabel = styled.label`
   z-index: 1000;
   box-shadow: 0 1rem 3rem rgba(182, 237, 200, 0.3);
   text-align: center;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 `;
 
 const MenuBar = styled.div`
@@ -38,6 +42,10 @@ const MenuBar = styled.div`
     font-size: 23px;
     font-family: "Playfair Display", serif;
     letter-spacing: 2px;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
   }
 `;
 
@@ -151,7 +159,7 @@ const ItemLink = styled(NavLink)`
   }
 `;
 
-const MenuNavigation = () => {
+const MenuNavigationSmall = () => {
   const [isClicked, setIsClicked] = useState(false);
   const [changeNav, setChangeNav] = useState(false);
 
@@ -187,9 +195,7 @@ const MenuNavigation = () => {
           <Icon clicked={isClicked}>&nbsp;</Icon>
         </MenuBar>
       )}
-
       <NavBackground clicked={isClicked}>&nbsp;</NavBackground>
-
       <Navigation clicked={isClicked}>
         <List>
           <li>
@@ -223,4 +229,4 @@ const MenuNavigation = () => {
   );
 };
 
-export default MenuNavigation;
+export default MenuNavigationSmall;

@@ -2,7 +2,8 @@ import React from "react";
 
 import { Routes, Route, Navigate } from "react-router-dom";
 
-import MenuNavigation from "./components/UI/HamburgerMenu";
+import MenuNavigationSmall from "./components/UI/HamburgerMenu";
+import MenuNavigationBig from "./components/UI/MenuNavigationBig";
 import Landing from "./pages/Landing";
 import About from "./pages/About";
 import KlimaschutzKonzept from "./pages/KlimaschutzKonzept";
@@ -13,7 +14,8 @@ import Legal from "./pages/Legal";
 function App() {
   return (
     <>
-      <MenuNavigation />
+      <MenuNavigationSmall />
+      <MenuNavigationBig />
       <Routes>
         <Route exact path="/" element={<Navigate replace to="/home" />} />
         <Route path="/home" element={<Landing />} />

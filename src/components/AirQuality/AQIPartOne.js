@@ -19,6 +19,10 @@ const DivTitle = styled.h2`
   margin: 0 3rem;
   margin-top: 3rem;
 
+  @media screen and (min-width: 768px) {
+    margin-top: 10rem;
+  }
+
   @media screen and (min-width: 1180px) {
     font-size: 4rem;
     line-height: 4.5rem;

@@ -184,7 +184,9 @@ const AQIPartTwo = () => {
           </Card>
           <Para>
             Für mehr Infos zu Luftqualität besuchen Sie{" "}
-            <a href="iqair.com">iqair.com</a>
+            <a href={"https://iqair.com"} target="_blank" rel="noreferrer">
+              iqair.com
+            </a>
           </Para>
         </Row>
       </FlexDiv>

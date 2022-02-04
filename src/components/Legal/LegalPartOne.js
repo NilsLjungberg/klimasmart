@@ -22,6 +22,10 @@ const DivTitle = styled.h2`
   font-style: italic;
   color: #115b4c;
 
+  @media screen and (min-width: 768px) {
+    margin-top: 10rem;
+  }
+
   @media screen and (min-width: 1180px) {
     font-size: 4rem;
     line-height: 4.5rem;

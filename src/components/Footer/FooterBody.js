@@ -1,14 +1,22 @@
 import React from "react";
 
+import { NavLink } from "react-router-dom";
+
 import { FirstDiv, Div, Info, Copyright } from "./FooterBody.styles";
 
 const FooterBody = () => {
+  const clickHandler = () => {
+    window.scrollTo(0, 0);
+  };
+
   return (
     <FirstDiv>
       <Div>
         <Info>
           <h3>klimasmart</h3>
-          <p>DOL Environmental Engineering & Consulting</p>
+          <a href={"https://environ.ch"} target="_blank" rel="noreferrer">
+            DOL Environmental Engineering & Consulting
+          </a>
           <p>Oberer Graben 22</p>
           <p>CH - 9000 St. Gallen</p>
           <p>Tel. +41-71-230-30-20</p>
@@ -17,22 +25,32 @@ const FooterBody = () => {
         <Info>
           <h3>Platform</h3>
           <p>
-            <a href="/about">Warum klimasmart</a>
+            <NavLink onClick={clickHandler} to="/about">
+              Warum klimasmart
+            </NavLink>
           </p>
           <p>
-            <a href="/klimaschutz">Klimaschutzkonzept</a>
+            <NavLink onClick={clickHandler} to="/klimaschutz">
+              Klimaschutzkonzept
+            </NavLink>
           </p>
           <p>
-            <a href="/ideen">Ideen und Tipps</a>
+            <NavLink onClick={clickHandler} to="/ideen">
+              Ideen und Tipps
+            </NavLink>
           </p>
           <p>
-            <a href="/aqi">Air Quality Index</a>
+            <NavLink onClick={clickHandler} to="/aqi">
+              Air Quality Index
+            </NavLink>
           </p>
         </Info>
         <Info>
           <h3>Legal</h3>
           <p>
-            <a href="/legal">Rechtliche Hinweise</a>
+            <NavLink onClick={clickHandler} to="/legal">
+              Rechtliche Hinweise
+            </NavLink>
           </p>
         </Info>
       </Div>

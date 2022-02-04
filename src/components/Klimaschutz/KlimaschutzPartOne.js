@@ -23,6 +23,10 @@ const DivTitle = styled.h2`
   margin: 0 3rem;
   margin-top: 3rem;
 
+  @media screen and (min-width: 768px) {
+    margin-top: 10rem;
+  }
+
   @media screen and (min-width: 1180px) {
     font-size: 4rem;
     line-height: 4.5rem;
@@ -128,6 +132,8 @@ const Para = styled.p`
   font-weight: 300;
   color: #115b4c;
   margin-bottom: 0;
+  margin-left: 3rem;
+  margin-right: 3rem;
 
   &:nth-of-type(2) {
     margin-bottom: 3rem;

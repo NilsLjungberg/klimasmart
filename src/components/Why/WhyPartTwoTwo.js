@@ -40,6 +40,7 @@ const Italic = styled.span`
 
 const Para = styled.p`
   margin: 3rem;
+  margin-top: 2.5rem;
   font-weight: 300;
   color: #115b4c;
 

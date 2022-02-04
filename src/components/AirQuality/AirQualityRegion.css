@@ -49,6 +49,8 @@
 
 .air-quality-left h2 {
   font-weight: 500;
+  letter-spacing: 0.1rem;
+  font-style: italic;
 }
 
 .air-quality-right {

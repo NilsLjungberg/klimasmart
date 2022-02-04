@@ -1,20 +1,27 @@
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans:400,700|Playfair+Display");
 
-.div {
+.header {
   font-family: "Playfair Display", serif;
   height: 14rem;
   width: 100%;
-  font-size: 2vw;
   display: flex;
   flex-direction: column;
   line-height: 2.5rem;
-  background: #115b4c;
+  background: rgba(17, 91, 76, 0.9);
   box-shadow: 0 0.5rem 2rem rgba(47, 47, 51);
 }
 
 .header-title {
+  font-size: 4vw;
   letter-spacing: 0.7rem;
-  text-align: center;
-  margin-top: 5rem;
+  text-align: left;
+  margin-top: 5.5rem;
   color: #b6edc8;
+  margin-left: 3rem;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    display: none;
+  }
 }

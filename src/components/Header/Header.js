@@ -4,9 +4,9 @@ import "./Header.css";
 
 const Header = () => {
   return (
-    <div className="div">
+    <header className="header">
       <h3 className="header-title">klimasmart</h3>
-    </div>
+    </header>
   );
 };
 

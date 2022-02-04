@@ -23,6 +23,8 @@ import {
 } from "./ContactForm.styles";
 
 const ContactForm = (props) => {
+  /* Name, Surname and Email Input */
+
   const {
     value: enteredName,
     isValid: enteredNameIsValid,
@@ -50,6 +52,10 @@ const ContactForm = (props) => {
     reset: resetEmailHandler,
   } = useInput((value) => value.includes("@"));
 
+  /* End Name, Surname and Email Input */
+
+  /* Phone Input */
+
   const [value, setValue] = useState();
   const [isTouched, setIsTouched] = useState(false);
 
@@ -65,11 +71,19 @@ const ContactForm = (props) => {
     setValue("");
   };
 
+  /* End Phone Input */
+
+  /* Company Input */
+
   const [enteredCompany, setEnteredCompany] = useState("");
 
   const companyChangeHandler = (event) => {
     setEnteredCompany(event.target.value);
   };
+
+  /* End Company Input */
+
+  /* Message Input */
 
   const [enteredText, setEnteredText] = useState("");
 
@@ -77,8 +91,14 @@ const ContactForm = (props) => {
     setEnteredText(event.target.value);
   };
 
+  /* End Message Input */
+
+  /* Form Input Status */
+
   const [isSent, setIsSent] = useState(false);
   const [status, setStatus] = useState("Absenden");
+
+  /* End Form Input Status */
 
   let formIsValid = false;
 

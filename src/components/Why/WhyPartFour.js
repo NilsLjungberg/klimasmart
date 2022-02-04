@@ -16,7 +16,7 @@ const Title = styled.h2`
   font-weight: bolder;
   margin-bottom: 1rem;
   text-align: left;
-  margin: 0 3rem 1.5rem 3rem;
+  margin: 0 3rem;
   margin-top: 3rem;
 
   @media screen and (min-width: 1180px) {

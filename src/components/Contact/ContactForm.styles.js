@@ -142,7 +142,13 @@ export const Button = styled.button`
 
 export const MessageDiv = styled.div`
   text-align: center;
-  color: #115b4c;
+  color: #b6edc8;
   font-size: 1.8rem;
   margin: 3rem 0;
+  background: #115b4c;
+  width: 50%;
+  margin-left: 25%;
+  padding: 2rem 0;
+  border-radius: 10px;
+  box-shadow: 0 1rem 3rem rgba(47, 47, 51, 0.3);
 `;

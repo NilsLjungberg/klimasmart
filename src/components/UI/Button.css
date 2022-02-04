@@ -3,13 +3,13 @@
   padding: 1rem 2rem;
   border-radius: 7px;
   border: none;
-  background: #115b4c;
+  background: rgb(17, 91, 76);
   color: whitesmoke;
   transition: all 0.5s ease-in-out;
 }
 
 .btn:hover {
-  background: #b6edc8;
+  background: rgb(182, 237, 200);
   color: rgb(47, 47, 51);
   cursor: pointer;
 }

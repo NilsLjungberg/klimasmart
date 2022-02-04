@@ -47,6 +47,7 @@ export const Info = styled.div`
     margin: 0.3rem 0;
     color: white;
     text-decoration: none;
+    font-weight: 300;
   }
 
   a:hover {
