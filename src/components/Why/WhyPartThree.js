@@ -82,6 +82,10 @@ const Para = styled.p`
 `;
 
 const WhyPartThree = () => {
+  const scrollToTopHandler = () => {
+    window.scrollTo(0, 0);
+  };
+
   return (
     <Div>
       <Title>
@@ -93,7 +97,9 @@ const WhyPartThree = () => {
           Eine{" "}
           <Italic>
             Verringerung der Klimaerwärmung und eine Verbesserung der{" "}
-            <ItemLink to="/aqi">Luftqualität</ItemLink>
+            <ItemLink onClick={scrollToTopHandler} to="/aqi">
+              Luftqualität
+            </ItemLink>
           </Italic>{" "}
           sind momentan zwei der dringendsten ökologischen Herausforderungen.
           Als Folge menschlicher Aktivitäten steigt die Konzentration von

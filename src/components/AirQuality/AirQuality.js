@@ -1,5 +1,7 @@
 import React, { useState, useEffect, useCallback } from "react";
 
+import Loader from "./Loader";
+
 import AirQualityRegion from "./AirQualityRegion";
 
 import styled from "styled-components";
@@ -11,8 +13,6 @@ const Para = styled.p`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: 2rem;
-  letter-spacing: 0.2rem;
 `;
 
 const Luftquality = () => {
@@ -58,7 +58,11 @@ const Luftquality = () => {
       {!isLoading && Object.keys(airQuality).length === 0 && error && (
         <Para>{error}</Para>
       )}
-      {isLoading && <Para>Loading...</Para>}
+      {isLoading && (
+        <Para>
+          <Loader />
+        </Para>
+      )}
     </>
   );
 };
