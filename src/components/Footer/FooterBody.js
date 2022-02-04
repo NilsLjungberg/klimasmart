@@ -25,7 +25,7 @@ const FooterBody = () => {
         <Info>
           <h3>Platform</h3>
           <p>
-            <NavLink onClick={clickHandler} to="/about">
+            <NavLink onClick={clickHandler} to="/warum">
               Warum klimasmart
             </NavLink>
           </p>

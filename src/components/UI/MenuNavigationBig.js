@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { Link } from "react-router-dom";
 
@@ -12,7 +12,8 @@ const Nav = styled.nav`
     height: 7rem;
     z-index: 1000;
     text-align: right;
-    background: rgba(17, 91, 76, 0.9);
+    background: ${(props) =>
+      props.scrolled ? "rgba(17, 91, 76, 0.9)" : "rgba(210, 245, 233, 0.432)"};
     position: fixed;
     cursor: pointer;
     box-shadow: 0 0.5rem 2rem rgba(47, 47, 51);
@@ -32,6 +33,12 @@ const HomeDiv = styled.div`
     font-family: "Playfair Display", serif;
     letter-spacing: 0.3rem;
   }
+
+  @media screen and (min-width: 991px) {
+    h3 {
+      margin-left: 7rem;
+    }
+  }
 `;
 
 const LinkDiv = styled.div`
@@ -40,27 +47,70 @@ const LinkDiv = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+
+  @media screen and (min-width: 991px) {
+    margin-right: 7rem;
+  }
 `;
 
 const ItemLink = styled(Link)`
-  color: #b6edc8;
+  color: ${(props) =>
+    props.scrolled ? "rgb(182, 237, 200)" : "rgb(17, 91, 76)"};
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+  font-weight: 300;
+
+  &:hover {
+    color: ${(props) => (props.scrolled ? "" : "rgba(17, 91, 76, 0.5)")};
+    transition: all 0.5s ease-in-out;
+  }
+
+  @media screen and (min-width: 991px) {
+    font-size: 1.5rem;
+  }
 `;
 
 const MenuNavigationBig = () => {
+  const [changeNav, setChangeNav] = useState(false);
+
+  const navChangeHandler = () => {
+    if (window.scrollY >= 80) {
+      setChangeNav(true);
+    } else {
+      setChangeNav(false);
+    }
+  };
+
+  const scrollToTopHandler = () => {
+    window.scrollTo(0, 0);
+  };
+
+  window.addEventListener("scroll", navChangeHandler);
+
   return (
-    <Nav>
+    <Nav scrolled={changeNav}>
       <HomeDiv>
-        <ItemLink to="/home">
+        <ItemLink onClick={scrollToTopHandler} scrolled={changeNav} to="/home">
           <h3>klimasmart</h3>
         </ItemLink>
       </HomeDiv>
       <LinkDiv>
-        <ItemLink to="/about">Warum klimasmart</ItemLink>
-        <ItemLink to="/klimaschutz">Klimaschutzkonzept</ItemLink>
-        <ItemLink to="/ideen">Ideen und Tipps</ItemLink>
-        <ItemLink to="/aqi">Air Quality Index</ItemLink>
+        <ItemLink onClick={scrollToTopHandler} scrolled={changeNav} to="/warum">
+          Warum klimasmart
+        </ItemLink>
+        <ItemLink
+          onClick={scrollToTopHandler}
+          scrolled={changeNav}
+          to="/klimaschutz"
+        >
+          Klimaschutzkonzept
+        </ItemLink>
+        <ItemLink onClick={scrollToTopHandler} scrolled={changeNav} to="/ideen">
+          Ideen und Tipps
+        </ItemLink>
+        <ItemLink onClick={scrollToTopHandler} scrolled={changeNav} to="/aqi">
+          Air Quality Index
+        </ItemLink>
       </LinkDiv>
     </Nav>
   );

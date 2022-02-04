@@ -53,9 +53,17 @@ const Para = styled.p`
 
 const Img = styled.img`
   margin: 0 3rem 4.5rem 3rem;
-  width: 350px;
+  width: 310px;
   border-radius: 10px;
   box-shadow: 0 0.3rem 0.7rem rgba(47, 47, 51, 0.3);
+
+  @media screen and (min-width: 375px) {
+    width: 330px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 350px;
+  }
 `;
 
 const WhyPartTwo = () => {

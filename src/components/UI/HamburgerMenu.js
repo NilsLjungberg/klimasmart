@@ -204,7 +204,7 @@ const MenuNavigationSmall = () => {
             </ItemLink>
           </li>
           <li>
-            <ItemLink onClick={clickNavHandler} to="/about">
+            <ItemLink onClick={clickNavHandler} to="/warum">
               Warum klimasmart
             </ItemLink>
           </li>

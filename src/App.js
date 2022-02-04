@@ -19,7 +19,7 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Navigate replace to="/home" />} />
         <Route path="/home" element={<Landing />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/warum" element={<About />} />
         <Route path="/klimaschutz" element={<KlimaschutzKonzept />} />
         <Route path="/ideen" element={<Ideas />} />
         <Route path="/aqi" element={<AQI />} />

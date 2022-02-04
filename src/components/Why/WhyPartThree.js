@@ -1,5 +1,7 @@
 import React from "react";
 
+import { NavLink } from "react-router-dom";
+
 import ClimateAndAir from "../../images/climateandair.jpeg";
 
 import styled from "styled-components";
@@ -45,6 +47,12 @@ const Italic = styled.span`
   color: #115b4c;
 `;
 
+const ItemLink = styled(NavLink)`
+  font-style: italic;
+  font-weight: bold;
+  color: #115b4c;
+`;
+
 const Img = styled.img`
   margin: 3rem;
   border-radius: 10px;
@@ -82,15 +90,19 @@ const WhyPartThree = () => {
       <FlexDiv>
         <Img src={ClimateAndAir} alt="climate and air quality" />
         <Para>
-          Eine Verringerung der Klimaerwärmung und eine Verbesserung der
-          Luftqualität sind momentan zwei der dringendsten ökologischen
-          Herausforderungen. Als Folge menschlicher Aktivitäten steigt die
-          Konzentration von Treibhausgasen in der Atmosphäre zurzeit stetig an,
-          das Klima heizt sich daher kontinuierlich auf. Folgen dieser vom
-          Menschen verursachten Klimaveränderung sind v. a. eine Häufung
-          extremer Wetterereignisse wie Dürre, Hagel, Stürme, Waldbrände und
-          Überschwemmungen, das fortschreitende Abschmelzen der Pole sowie der
-          Anstieg des Meeresspiegels und alle Folgewirkungen wie Artensterben,
+          Eine{" "}
+          <Italic>
+            Verringerung der Klimaerwärmung und eine Verbesserung der{" "}
+            <ItemLink to="/aqi">Luftqualität</ItemLink>
+          </Italic>{" "}
+          sind momentan zwei der dringendsten ökologischen Herausforderungen.
+          Als Folge menschlicher Aktivitäten steigt die Konzentration von
+          Treibhausgasen in der Atmosphäre zurzeit stetig an, das Klima heizt
+          sich daher kontinuierlich auf. Folgen dieser vom Menschen verursachten
+          Klimaveränderung sind v. a. eine Häufung extremer Wetterereignisse wie
+          Dürre, Hagel, Stürme, Waldbrände und Überschwemmungen, das
+          fortschreitende Abschmelzen der Pole sowie der Anstieg des
+          Meeresspiegels und alle Folgewirkungen wie Artensterben,
           Ernteausfälle, Verlust von Siedlungsraum usw. Die Schadstoffe Russ,
           Ozon und Methan besitzen sowohl ein Klimaerwärmungs- als auch ein
           Luftschadstoffpotenzial. Sie haben eine Lebensdauer von einigen
