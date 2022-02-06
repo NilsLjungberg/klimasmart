@@ -61,10 +61,11 @@ export const Info = styled.div`
 `;
 
 export const Copyright = styled.div`
-  margin: 0 3rem 1.5rem 3rem;
+  margin: 0 3rem 2.5rem 3rem;
   font-size: 1rem;
 
   @media screen and (min-width: 991px) {
     margin-left: 4.5rem;
+    margin-top: 20vh;
   }
 `;

@@ -58,6 +58,7 @@ const Img = styled.img`
   border-radius: 10px;
   width: 310px;
   height: 180px;
+  box-shadow: 0 0.3rem 0.7rem rgba(47, 47, 51, 0.3);
 
   @media screen and (min-width: 768px) {
     width: 400px;

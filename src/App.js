@@ -23,14 +23,6 @@ const Div = styled.div`
   align-items: center;
   width: 100%;
   height: 100vh;
-  font-family: "Playfair Display", serif;
-
-  h1 {
-    margin-bottom: 3rem;
-    margin-left: 3rem;
-    font-size: 3rem;
-    color: rgb(17, 91, 76);
-  }
 `;
 
 function App() {
@@ -47,7 +39,6 @@ function App() {
     <>
       {isLoading && (
         <Div>
-          <h1>klimasmart</h1>
           <PacmanLoader
             color={"rgb(17, 91, 76)"}
             loading={isLoading}
