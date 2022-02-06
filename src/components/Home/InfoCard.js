@@ -155,7 +155,7 @@ const InfoCard = () => {
               <Italic>klimasmart</Italic> unterstützt Unternehmen und Gemeinden
               bei der Erfassung und Optimierung ihrer Klimasituation.
             </p>
-            <NavLink onClick={clickHandler} to="/about">
+            <NavLink onClick={clickHandler} to="/warum">
               <Button>Mehr Info</Button>
             </NavLink>
           </Text>
