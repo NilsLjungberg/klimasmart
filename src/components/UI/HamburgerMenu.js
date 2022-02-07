@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 
 import styled from "styled-components";
@@ -175,7 +175,12 @@ const MenuNavigationSmall = () => {
     }
   };
 
-  window.addEventListener("scroll", navChangeHandler);
+  useEffect(() => {
+    window.addEventListener("scroll", navChangeHandler);
+    return () => {
+      window.removeEventListener("scroll", navChangeHandler);
+    };
+  });
 
   return (
     <>

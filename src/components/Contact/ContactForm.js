@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 
-import axios from "axios";
+import emailjs from "emailjs-com";
 
 import useInput from "../../hooks/use-input";
 
@@ -23,6 +23,8 @@ import {
 } from "./ContactForm.styles";
 
 const ContactForm = (props) => {
+  /* emailjs */
+  const form = useRef();
   /* Name, Surname and Email Input */
 
   const {
@@ -113,40 +115,39 @@ const ContactForm = (props) => {
 
   const formSubmitHandler = async (event) => {
     event.preventDefault();
-    setStatus("Versenden...");
+    setStatus("Senden...");
 
-    let data = {
-      name: enteredName,
-      surname: enteredSurname,
-      email: enteredEmail,
-      phone: value,
-      company: enteredCompany,
-      message: enteredText,
-    };
-
-    axios
-      .post("/api/forma", data)
-      .then((res) => {
-        resetNameHandler();
-        resetSurnameHandler();
-        resetEmailHandler();
-        resetPhoneNumberHandler();
-        setEnteredCompany("");
-        setEnteredText("");
-        setIsSent(true);
-        setStatus("Absenden");
-        setTimeout(() => {
-          setIsSent(false);
-        }, 5000);
-      })
-      .catch(() => {
-        console.log("message not sent");
-      });
+    emailjs
+      .sendForm(
+        "service_kuzldxj",
+        "template_kescx6z",
+        form.current,
+        "user_355Um5kO3FcpNkNZZL6Pr"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          resetNameHandler();
+          resetSurnameHandler();
+          resetEmailHandler();
+          resetPhoneNumberHandler();
+          setEnteredCompany("");
+          setEnteredText("");
+          setIsSent(true);
+          setStatus("Absenden");
+          setTimeout(() => {
+            setIsSent(false);
+          }, 5000);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
   };
 
   return (
     <Div>
-      <Form onSubmit={formSubmitHandler}>
+      <Form ref={form} onSubmit={formSubmitHandler}>
         <Personal>
           <Complete>
             <label htmlFor="vorname">
@@ -162,6 +163,7 @@ const ContactForm = (props) => {
                   ? "Bitte füllen Sie das erforderliche Feld aus!"
                   : ""
               }
+              name="name"
             />
           </Complete>
           <Complete>
@@ -178,6 +180,7 @@ const ContactForm = (props) => {
                   ? "Bitte füllen Sie das erforderliche Feld aus!"
                   : ""
               }
+              name="lastname"
             />
           </Complete>
         </Personal>
@@ -196,6 +199,7 @@ const ContactForm = (props) => {
                   ? "Bitte füllen Sie das erforderliche Feld aus! (inkl. @)"
                   : ""
               }
+              name="email"
             />
           </Complete>
           <Complete>
@@ -213,6 +217,7 @@ const ContactForm = (props) => {
                   ? "Bitte füllen Sie das erforderliche Feld aus!"
                   : ""
               }
+              name="phone"
             />
           </Complete>
         </Personal>
@@ -222,6 +227,7 @@ const ContactForm = (props) => {
             id="company"
             value={enteredCompany}
             onChange={companyChangeHandler}
+            name="company"
           />
         </Other>
         <Other>
@@ -234,6 +240,7 @@ const ContactForm = (props) => {
             id="textarea"
             value={enteredText}
             onChange={textChangeHandler}
+            name="message"
           />
         </Other>
         <ButtonDiv>

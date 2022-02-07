@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import { Link } from "react-router-dom";
 
@@ -60,11 +60,6 @@ const ItemLink = styled(Link)`
   font-size: 1.3rem;
   font-weight: 300;
 
-  &:hover {
-    color: ${(props) => (props.scrolled ? "" : "rgba(17, 91, 76, 0.5)")};
-    transition: all 0.5s ease-in-out;
-  }
-
   @media screen and (min-width: 991px) {
     font-size: 1.5rem;
   }
@@ -85,7 +80,12 @@ const MenuNavigationBig = () => {
     window.scrollTo(0, 0);
   };
 
-  window.addEventListener("scroll", navChangeHandler);
+  useEffect(() => {
+    window.addEventListener("scroll", navChangeHandler);
+    return () => {
+      window.removeEventListener("scroll", navChangeHandler);
+    };
+  });
 
   return (
     <Nav scrolled={changeNav}>
