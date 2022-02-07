@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Helmet } from "react-helmet";
 
 import PacmanLoader from "react-spinners/PacmanLoader";
 
@@ -37,6 +38,12 @@ function App() {
 
   return (
     <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <meta name="zukunftsorientierte Klimastrategien für Unternehmen und Gemeinden" />
+        <title>klimasmart - zukunftsorientierte Klimastrategien</title>
+        <link rel="canonical" href="https://klimasmart.ch" />
+      </Helmet>
       {isLoading && (
         <Div>
           <PacmanLoader
