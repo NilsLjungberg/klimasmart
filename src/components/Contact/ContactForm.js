@@ -1,6 +1,7 @@
 import React, { useState, useRef } from "react";
 
 import emailjs from "emailjs-com";
+import ReCAPTCHA from "react-google-recaptcha";
 
 import useInput from "../../hooks/use-input";
 
@@ -23,8 +24,18 @@ import {
 } from "./ContactForm.styles";
 
 const ContactForm = (props) => {
-  /* emailjs */
+  /* emailjs and ReCAPTCHA */
   const form = useRef();
+  const recaptchaKey = "6Lfi4mUeAAAAAL9fcf_qiUM0LUXUIqHndA6O89a9";
+  const recaptchaRef = useRef();
+  const [recaptchaClicked, setRecaptchaClicked] = useState(false);
+
+  const recaptchaClickHandler = () => {
+    setRecaptchaClicked(true);
+  };
+
+  /* End emailjs and ReCAPTCHA */
+
   /* Name, Surname and Email Input */
 
   const {
@@ -108,7 +119,8 @@ const ContactForm = (props) => {
     enteredNameIsValid &&
     enteredSurnameIsValid &&
     enteredEmailIsValid &&
-    phoneNumberIsValid
+    phoneNumberIsValid &&
+    recaptchaClicked
   ) {
     formIsValid = true;
   }
@@ -134,10 +146,12 @@ const ContactForm = (props) => {
           setEnteredCompany("");
           setEnteredText("");
           setIsSent(true);
+          recaptchaRef.current.reset();
+          setRecaptchaClicked(false);
           setStatus("Absenden");
           setTimeout(() => {
             setIsSent(false);
-          }, 5000);
+          }, 4000);
         },
         (error) => {
           console.log(error.text);
@@ -242,7 +256,14 @@ const ContactForm = (props) => {
             onChange={textChangeHandler}
             name="message"
           />
+
+          <ReCAPTCHA
+            ref={recaptchaRef}
+            onChange={recaptchaClickHandler}
+            sitekey={recaptchaKey}
+          />
         </Other>
+
         <ButtonDiv>
           <Button disabled={!formIsValid} type="submit">
             {status}

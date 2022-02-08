@@ -101,6 +101,7 @@ export const Textarea = styled.textarea`
   font-family: "Poppins", sans-serif;
   color: #115b4c;
   box-shadow: 0 1rem 3rem rgba(47, 47, 51, 0.3);
+  margin-bottom: 2rem;
 
   &:focus {
     outline: none;
@@ -118,7 +119,7 @@ export const ButtonDiv = styled.div`
 `;
 
 export const Button = styled.button`
-  margin: 1rem 1rem 0 1rem;
+  margin: 0 1rem;
   padding: 1rem 2rem;
   border-radius: 7px;
   border: none;
