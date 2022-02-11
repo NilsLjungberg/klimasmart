@@ -17,7 +17,7 @@ import AQI from "./pages/AQI";
 import Legal from "./pages/Legal";
 
 const Div = styled.div`
-  background: rgb(182, 237, 200);
+  background: rgb(17, 91, 76);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -47,7 +47,7 @@ function App() {
       {isLoading && (
         <Div>
           <PacmanLoader
-            color={"rgb(17, 91, 76)"}
+            color={"rgb(182, 237, 200)"}
             loading={isLoading}
             size={25}
           />
