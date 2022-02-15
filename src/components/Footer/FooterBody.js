@@ -23,7 +23,7 @@ const FooterBody = () => {
           <p>info@environ.ch</p>
         </Info>
         <Info>
-          <h3>Platform</h3>
+          <h3>Plattform</h3>
           <p>
             <NavLink onClick={clickHandler} to="/warum">
               Warum klimasmart

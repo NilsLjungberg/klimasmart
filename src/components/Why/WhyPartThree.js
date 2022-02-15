@@ -90,7 +90,7 @@ const WhyPartThree = () => {
   return (
     <Div>
       <Title>
-        <Italic>Ökologische</Italic> Herausforderungen
+        <Italic>Klimawandel und Luftqualität</Italic>
       </Title>
       <FlexDiv>
         <Img src={ClimateAndAir} alt="climate and air quality" />

@@ -35,7 +35,7 @@ const FooterTitle = () => {
   return (
     <Div>
       <Title>
-        Die <Italic>führende Platform</Italic> für Nachhaltigkeit
+        Die <Italic>zukunftsorientierte Plattform</Italic> für Klimastrategien
       </Title>
     </Div>
   );

@@ -58,8 +58,8 @@ const ContactFormTitle = () => {
         <Italic>Interessiert</Italic> mehr zu erfahren?
       </Title>
       <Para>
-        Lassen Sie uns mit einem Fokus auf die Bedürfnisse und Ambitionen Ihres
-        Unternehmens <Italic>klimasmart</Italic> vorstellen.
+        Mit einem Fokus auf die Bedürfnisse und Ambitionen Ihres Unternehmens
+        geben wir Ihnen gerne mehr <Italic>Auskunft zu klimasmart.</Italic>
       </Para>
       <Para>
         Bitte geben Sie unten Ihre Kontaktangaben an und wir werden uns in Kürze

@@ -136,13 +136,12 @@ const InfoCard = () => {
     <>
       <InfoParagraph>
         <h2>
-          <Italic>Drei Pfeiler</Italic> zum nachhaltigen Erfolg ihres
-          Unternehmens
+          <Italic>klimasmart</Italic> zum nachhaltigen Erfolg ihres Unternehmens
         </h2>
         <p>
           <Italic>klimasmart</Italic> stellt sicher, dass Sie sowohl ihre
-          Nachhaltigkeit in jedem Bereich optimieren, als auch ihre Transparenz
-          nachvollziehbar erreichen.
+          Nachhaltigkeit in jedem Bereich optimieren, als auch ihre Aufgaben im
+          Bereich Klimaschutz nachvollziehbar erreichen.
         </p>
         <Container>
           <Image src={InfoImage} alt="" />
