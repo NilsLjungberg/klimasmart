@@ -222,12 +222,13 @@ const WhyPartFour = (props) => {
               <p>
                 Methan (CH4) ist ein starkes Treibhausgas und ein Vorläufer von
                 Ozon. Etwa 60% der Methanemissionen auf globaler Ebene kommen
-                aus anthropogenen Aktivitäten (CCAC, 2014). Die Bereiche
-                fossiler Brennstoffe, Abfalldeponien und die Landwirtschaft sind
-                die Hauptverantwortliche für die CH4-Emissionen. Das absolute
-                Treibhauspotential von Methan pro Einheit ist etwa 28-mal
-                grösser als das von CO₂, aber die Lebenszeit ist viel kürzer,
-                etwa 12 Jahre (Myhre et al., 2013B).
+                aus anthropogenen Aktivitäten <Italic>(CCAC, 2014)</Italic>. Die
+                Bereiche fossiler Brennstoffe, Abfalldeponien und die
+                Landwirtschaft sind die Hauptverantwortliche für die
+                CH4-Emissionen. Das absolute Treibhauspotential von Methan pro
+                Einheit ist etwa 28-mal grösser als das von CO₂, aber die
+                Lebenszeit ist viel kürzer, etwa 12 Jahre.{" "}
+                <Italic>(Myhre et al., 2013B)</Italic>
               </p>
             </Text>
           </Card>
@@ -241,8 +242,9 @@ const WhyPartFour = (props) => {
                 menschliche Aktivitäten emittiert wird. Ozon bildet sich in der
                 Atmosphäre aufgrund der Emissionen von NOx, NMVOC und CO. Hohe
                 Ozonbelastungen sind verantwortlich für 25.000 vorzeitige
-                Todesfälle pro Jahr in Europa (IIASA, 2013) und haben erhebliche
-                negative Auswirkungen auf die landwirtschaftlichen Erträge.
+                Todesfälle pro Jahr in Europa <Italic>(IIASA, 2013)</Italic> und
+                haben erhebliche negative Auswirkungen auf die
+                landwirtschaftlichen Erträge.
               </p>
             </Text>
           </Card>
@@ -266,6 +268,27 @@ const WhyPartFour = (props) => {
             </Text>
           </Card>
         </TwoCardsDiv>
+      </CardsDiv>
+      <CardsDiv>
+        <Card>
+          <Text>
+            <CardTitle>Synthetische Gase</CardTitle>
+            <p>
+              Unter den synthetischen Gasen werden teilhalogenierte
+              Fluor-Kohlenwasserstoffe (HFC), perfluorierte Kohlenwasserstoffe
+              (PFC), Schwefelhexafluorid (SF6) und Stickstofftrifluorid (NF3)
+              zusammengefasst. Ihre Wirkung auf den Treibhauseffekt übersteigt
+              diejenige von Kohlendioxid (CO₂) teils um ein Mehrfaches. Die
+              synthetischen Gase werden als Kältemittel in Kühlräumen,
+              Kühlschränken und Klimaanlagen verwendet. Dabei entstehen auch
+              ungewollte Emissionen in die Atmosphäre, welche stark zum
+              Treibhauseffekt beitragen. Daher sind bereits geringe Emissionen
+              synthetischer Gase von Bedeutung. Die starke Zunahme seit 1994 ist
+              vor allem durch den Ersatz von Chlor-Fluor-Kohlenwasserstoffen
+              (CFC) durch HFC bedingt. <Italic>Quelle: BAFU.admin.ch</Italic>
+            </p>
+          </Text>
+        </Card>
       </CardsDiv>
       <Para>
         Viele Emissionsquellen emittieren einen Cocktail von Treibhausgasen und

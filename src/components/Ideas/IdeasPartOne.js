@@ -6,6 +6,7 @@ const Div = styled.div`
   height: 100%;
   width: 100%;
   font-size: 1.8rem;
+  background: rgba(210, 245, 233, 0.432);
   display: flex;
   flex-direction: column;
   line-height: 2.5rem;

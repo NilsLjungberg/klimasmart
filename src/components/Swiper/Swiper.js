@@ -97,7 +97,7 @@ const SwiperImage = () => {
       <Div>
         <Title>
           Zusammen mit unseren Kunden entwickeln wir{" "}
-          <span>die führende Nachhaltigkeits Platform</span> für Unternehmen
+          <span>die führende Nachhaltigkeits Plattform</span> für Unternehmen
         </Title>
       </Div>
       <Swiper

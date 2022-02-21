@@ -131,7 +131,7 @@ const ContactForm = (props) => {
 
     emailjs
       .sendForm(
-        "service_kuzldxj",
+        "service_gjpy6v5",
         "template_kescx6z",
         form.current,
         "user_355Um5kO3FcpNkNZZL6Pr"

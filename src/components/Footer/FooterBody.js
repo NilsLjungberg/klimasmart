@@ -20,7 +20,7 @@ const FooterBody = () => {
           <p>Oberer Graben 22</p>
           <p>CH - 9000 St. Gallen</p>
           <p>Tel. +41-71-230-30-20</p>
-          <p>info@environ.ch</p>
+          <p>info@klimasmart.ch</p>
         </Info>
         <Info>
           <h3>Plattform</h3>

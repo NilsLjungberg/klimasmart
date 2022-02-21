@@ -149,7 +149,7 @@ const LegalPartOne = () => {
       <SubTitle>Hilfe</SubTitle>
       <Para>
         Wenn Sie Probleme oder Fragen bei der Nutzung der Webseite klimasmart.ch
-        haben, so kontaktieren Sie uns via info@environ.ch oder rufen Sie an
+        haben, so kontaktieren Sie uns via info@klimasmart.ch oder rufen Sie an
         unter +41-71-230-30-20.
       </Para>
       <SubTitle>Änderungen und Ergänzungen sowie anwendbares Recht</SubTitle>
