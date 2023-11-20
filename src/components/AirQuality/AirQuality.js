@@ -25,7 +25,7 @@ const Luftquality = () => {
     setError(null);
     try {
       const response = await fetch(
-        "https://api.airvisual.com/v2/nearest_city?key=bac20422-8237-4735-9206-933abccf2398"
+        "https://api.airvisual.com/v2/nearest_city?key=a9cd393e-fd06-47a1-a786-85e322f76a20"
       );
 
       if (response.status !== 200) {
